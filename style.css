@@ -1,0 +1,166 @@
+
+/* Partie 2 : Mise en forme générale */
+body {
+    font-family: "Amasis", serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Partie 3 : Titre */
+.titre-formulaire {
+    text-align: center;
+    color: #1f4e79;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Partie 4 : Formulaire */
+form {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #cccccc;
+    box-sizing: border-box;
+}
+
+/* Partie 5 : Organisation des groupes */
+.groupes {
+    display: flex;
+    gap: 20px;
+}
+
+fieldset {
+    flex: 1;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 5px;
+}
+
+/* Partie 6 : Titres des groupes */
+legend {
+    color: #1f4e79;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Partie 7 : Labels */
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Partie 8 : Champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Partie 9 : Effet Focus */
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #1f4e79;
+    outline: none;
+    background-color: #f8fbff;
+}
+
+/* Partie 10 : Placeholders */
+::placeholder {
+    color: #999999;
+}
+
+/* Partie 11 : Sous-titres */
+.sous-titre {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Partie 12 : Boutons radio */
+.choix {
+    display: flex;
+    gap: 20px;
+}
+
+.choix label {
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Partie 13 : Cases à cocher verticales */
+.choix-colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Partie 14 : Zone de motivation */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Partie 15 : Zone des boutons */
+.boutons {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Partie 16 : Style commun des boutons */
+input[type="submit"],
+input[type="reset"] {
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Partie 17 : Bouton S'inscrire */
+input[type="submit"] {
+    background-color: #13d830;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Partie 18 : Bouton Réinitialiser */
+input[type="reset"] {
+    background-color: #f30707;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Partie 19 : Effet au survol */
+input[type="submit"]:hover {
+    background-color: #0b8f20;
+    
+}
+
+input[type="reset"]:hover {
+    background-color: #b00000;
+}
+
+/* Partie 20 : Responsive Design */
+@media (max-width: 850px) {
+    .groupes {
+        flex-direction: column;
+    }
+}
